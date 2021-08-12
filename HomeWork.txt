@@ -1,0 +1,179 @@
+1.What is Kestral?
+
+Ans-Kestrel is a cross-platform web server for ASP.NET Core.
+Kestrel is the web server that's included and enabled by default in ASP.NET Core project templates.
+Kestrel supports the following scenarios: HTTPS. HTTP/2
+
+2.What Configure() method does in Startup.cs?
+
+Ans-The Configure method is used to specify how the app responds to HTTP requests. 
+The request pipeline is configured by adding middleware components to an IApplicationBuilder instance. 
+IApplicationBuilder is available to the Configure method, but it isn't registered in the service container.
+
+3.What ConfigureServices() method does in Startup.cs?
+
+Ans-Your Startup class can optionally include a ConfigureServices method for configuring services that are used by your application.
+The ConfigureServices method is a public method on your Startup class that takes an IServiceCollection instance as a parameter and optionally returns an IServiceProvider 
+
+4.What is “Razor pages” in ASP.NET Core?
+
+Ans-Razor Pages is a new aspect of ASP.NET Core MVC introduced in ASP.NET Core 2.0.
+It offers a "page-based" approach for building server-side rendered apps in ASP.NET Core and can coexist with "traditional" MVC or Web API controllers. ... NET Core application then checkout this free 5-part video series.
+
+5.What is the use of the Dispose method?
+
+Ans-Dispose improves performance and optimizes memory by releasing unmanageable objects and scarce resources,
+like Graphics Device Interface (GDI) handles used in applications with restricted Windows space.
+The Dispose method, provided by the IDisposable interface, implements Dispose calls.
+
+6.What is an interface and what is an abstract class? and the difference
+
+Ans-The short answer: An abstract class allows you to create functionality that subclasses can implement or override.
+An interface only allows you to define functionality, not implement it. And whereas a class can extend only one abstract class,
+it can take advantage of multiple interfaces.
+
+7.What is connection pooling and how do you make your application use it?
+
+Ans-Connection pooling allows you to reuse connections rather than create a new one every time the ADO.NET data provider needs to establish a connection to the underlying database.
+Connection pooling behavior can be controlled by using connection string options (see the documentation for your data provider).
+
+8.What is MSMQ?
+
+Ans-MSMQ (Microsoft Message Queuing) is a message queue that is available by default as part of Windows.
+A reliable way of sending and receiving messages across computer systems, MSMQ provides a queue that's scalable,
+thread-safe, simple, and convenient to use while at the same time providing you the opportunity to persist the messages inside the Windows database.
+The MSDN states: "Message Queuing (MSMQ) technology enables applications running at different times to communicate across heterogeneous networks and systems that may be temporarily offline.
+Applications send messages to queues and read messages from queues."
+
+9.What is entity framework?
+
+Ans-Prior to .NET 3.5, we (developers) often used to write ADO.NET code or Enterprise Data Access Block to save or retrieve application data from the underlying database.
+We used to open a connection to the database, create a DataSet to fetch or submit the data to the database, convert data from the DataSet to .NET objects or vice-versa to apply business rules.
+This was a cumbersome and error prone process. Microsoft has provided a framework called "Entity Framework" to automate all these database related activities for your application.
+
+Entity Framework is an open-source ORM framework for .NET applications supported by Microsoft. 
+It enables developers to work with data using objects of domain specific classes without focusing on the underlying database tables and columns where this data is stored. 
+With the Entity Framework, developers can work at a higher level of abstraction when they deal with data, and can create and maintain data-oriented applications with less code compared with traditional applications.
+
+10.what is the difference between code first and DB first?
+
+Ans-The main difference between Code First and Database First Approach in MVC is that the Code First approach allows the programmer to create entity classes with properties first,
+and then create the database and tables based on the defined entity classes.
+
+11.What is the difference between NUnit and XUnit project?
+
+Ans-NUnit creates a new instance of the test class and then runs all of the test methods from the same instance.
+Whereas xUnit.net creates a new instance of the test class for very each of the test methods.
+
+12.what is the use of setup in testcase project?
+
+Ans-Setup test cases are designed to run at the beginning of your test case in order to declare and define conditions and variables.
+The primary benefit of using a setup test case is to simplify the process of making global changes to test case parameters.
+
+13.What is API?
+
+Ans-API stands for application programming interface. It allows two applications to communicate with one another to access data.
+Every action you take on your phone, like sending a direct message or checking the score of the baseball game, uses an API to access and deliver that information.
+
+14.What is JSON?
+
+Ans-JavaScript Object Notation (JSON) is a standard text-based format for representing structured data based on JavaScript object syntax.
+It is commonly used for transmitting data in web applications (e.g., sending some data from the server to the client, so it can be displayed on a web page or vice versa).
+
+15.What is redis cache and advantages of it?
+
+Ans-All Redis data resides in-memory, in contrast to databases that store data on disk or SSDs. ... Redis features versatile data structures
+high availability, geospatial, Lua scripting, transactions, on-disk persistence, and cluster support making it simpler to build real-time internet scale apps.
+
+16.What is delegates and events?
+
+Ans-A delegate is an object which refers to a method or you can say it is a reference type variable that can hold a reference to the methods.
+Delegates in C# are similar to the function pointer in C/C++. It provides a way which tells which method is to be called when an event is triggered.
+
+17.What is the difference between LINQ and Lambda ?
+
+Ans-Lamda Expression: It is an unnamed method written in the place of delegate instance. The symbole => is called Lamda operator.
+LINQ :- Linq(Language Integrated Query) integrates query syntax inside the c# programming language.
+It is collection of standard query operators which provides query facility in .NET framework language like c#, VB.NET.
+
+18.What is middlewares?
+
+Ans-Middleware is software which lies between an operating system and the applications running on it.
+Essentially functioning as hidden translation layer, middleware enables communication and data management for distributed applications.
+It is sometimes called plumbing, as it connects two applications together so data and databases can be easily passed between the “pipe.” Using middleware allows users to perform such requests as submitting forms on a web browser or allowing the web server to return dynamic web pages based on a user’s profile.
+
+19.What is filters?
+
+Ans-An action filter is an attribute that you can apply to a controller action -- or an entire controller -- that modifies the way in which the action is executed.
+
+20.What is data structure and types of data structure?
+
+Ans-A data structure is a collection of data type 'values' which are stored and organized in such a way that it allows for efficient access and modification.
+When we think of data structures, there are generally four forms: ... Linear: arrays, lists. Tree: binary, heaps, space partitioning etc.
+
+21.What is design patterns and types?
+
+Ans-Design Patterns are categorized mainly into three categories: Creational Design Pattern, Structural Design Pattern, and Behavioral Design Pattern.
+These are differed from each other on the basis of their level of detail, complexity, and scale of applicability to the entire system being design.
+
+22.What is Dependency injections?
+
+Ans-As the other answers stated, dependency injection is a way to create your dependencies outside of the class that uses it.
+You inject them from the outside, and take control about their creation away from the inside of your class.
+
+23.What is SQL injection?
+
+Ans-SQL injection, also known as SQLI, is a common attack vector that uses malicious SQL code for backend database manipulation to access information that was not intended to be displayed.
+This information may include any number of items, including sensitive company data, user lists or private customer details.
+
+24.what is joins?
+
+Ans-A SQL Join statement is used to combine data or rows from two or more tables based on a common field between them.
+Different types of Joins are: INNER JOIN. LEFT JOIN.
+
+25.What is N tier architecture?
+
+Ans-
+N-tier architecture is a client-server architecture concept in software engineering where the presentation, processing and data management functions are both logically and physically separated. ... 
+N-tier architecture is also known as multi-tier architecture.
+
+26.WHat is the use if appsetting file in project?
+
+Ans-The appsettings. json file is an application configuration file used to store configuration settings such as database connections strings
+Any application scope global variables, etc. If you open the ASP.NET Core appsettings. json file, then you see the following code by default which is created by visual studio.
+
+27.what is the difference between RUN and BUILD?
+
+Ans-Run is the process of executing a program. Build usually includes one or more compile steps and once an application has been built it can be run.
+Techniques like just in time compilation (JIT) and dynamic libraries blur the boundary between these steps in terms of when they take place.
+
+28.What is DLL file?
+
+Ans
+The use of DLLs helps promote modularization of code, code reuse, efficient memory usage, and reduced disk space.
+So, the operating system and the programs load faster, run faster, and take less disk space on the computer.
+When a program uses a DLL, an issue that is called dependency may cause the program not to run.
+
+29.What is the use of Swagger?
+
+Ans-Swagger is a set of open-source tools built around the OpenAPI Specification that can help you design, build, document and consume REST APIs.
+The major Swagger tools include: Swagger Editor – browser-based editor where you can write OpenAPI specs.
+Swagger UI – renders OpenAPI specs as interactive API documentation.
+
+30.What is the advantages of JWT tokens?
+
+Ans-It is compact – Can be sent via URL/ Post request/HTTP Header which makes it fast for transmission and usable.
+Self Content – It contains the details of user (not session id in cookies like traditional request), so no need to query database to get user details.
+
+31.What is authorization and authentication?
+
+Ans-Authorization. Authentication confirms that users are who they say they are. ... 
+Authorization gives those users permission to access a resource. While authentication and authorization might sound similar,
+they are distinct security processes in the world of identity and access management
+
+32.what is routes and why we are using it?
+
+Ans-
+Routing is used to map requests to route handlers.
+Routes are configured when the application starts up, and can extract values from the URL that will be used for request processing.
+Routing functionality is also responsible for generating links using the defined routes in ASP.NET apps
